@@ -40,8 +40,9 @@ const MORSE_TABLE = {
 function decode(expr) {
   let countSymbols = expr.length / 10; // количество символов c пробелами
   let result = "";
-  let part = "";
   let step = 0;
+  let part = "";
+
   for (let i = 0; i < countSymbols; i++) {
     // console.log(expr.slice(i, 10));
     part = expr.slice(step, step + 10);
